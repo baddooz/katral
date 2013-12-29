@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  
+   ul
+    li
+         a(href="http://localhost:3000/newSupplier") Add new supplier 
+    li
+         a(href="http://localhost:3000/supplierlist") List all suppliers
+    li
+         a(href="http://localhost:3000/newpartner") Add new partner
+    li
+        a(href="http://localhost:3000/partnerlist") List all partners

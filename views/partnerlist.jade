@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1.
+    Partner List
+  ul
+    each partner, i in partnerlist
+      li
+         a(href="mailto:#{partner.email}")=partner.partnername 
+         p=partner.city

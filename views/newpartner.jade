@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  form#formAddUser(name="addpartner", method="post", action="/addpartner")
+    input#inputUserName(type="text", placeholder="partnername", name="partnername")
+    input#inputUserCity(type="text", placeholder="partnercity", name="partnercity")
+    input#inputUserEmail(type="text", placeholder="partneremail", name="partneremail")
+    button#btnSubmit(type="submit") submit

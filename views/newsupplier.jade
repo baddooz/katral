@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  form#formAddSupplier(name="addsupplier", method="post", action="/addsupplier")
+    input#inputEntityName(type="text", placeholder="entityname", name="entityname")
+    input#inputEntityStreet1(type="text", placeholder="entitystreet1", name="entitystreet1")
+    input#inputEntityStreet2(type="text", placeholder="entitystreet2", name="entitystreet2")
+    input#inputEntityStreet3(type="text", placeholder="entitystreet3", name="entitystreet3")
+    input#inputEntityCity(type="text", placeholder="entitycity", name="entitycity")
+    input#inputEntityState(type="text", placeholder="entitystate", name="entitystate")
+    input#inputEntityCountry(type="text", placeholder="entitycountry", name="entitycountry")
+    input#inputEntityCountryISOCode(type="text", placeholder="entitycountryisocode", name="entitycountryisocode")
+    input#inputEntityPhoneNumber(type="text", placeholder="entityphonenumber", name="entityphonenumber")
+    input#inputEntityFaxNumber(type="text", placeholder="entityfaxnumber", name="entityfaxnumber")
+    input#inputEntityEmail(type="text", placeholder="entityemail", name="entityemail")
+    input#inputEntityDAndBNumber(type="text", placeholder="entitydandbnumber", name="entitydandbnumber")
+    button#btnSubmit(type="submit") submit
